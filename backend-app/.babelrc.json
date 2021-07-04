@@ -1,0 +1,11 @@
+{
+    "presets": [
+["@babel/preset-env", 
+    {
+        "loose": true,
+        "debug": true,
+        "targets": { "node": "current" }
+    }
+],["@babel/preset-typescript"]],
+    "plugins": ["@babel/plugin-proposal-class-properties"]
+  }
