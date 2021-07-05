@@ -2,7 +2,7 @@ import React from 'react'
 import {BrowserRouter as Router, useRoutes, Outlet} from 'react-router-dom'
 import ReactDOM from 'react-dom'
 
-// import ErrorBoundary from './components/UIcomponents/Notifications/ErrorBoundary/ErrorBoundary'
+import CryptoPage from './components/Pages/Crypto/Crypto'
 
 import 'typeface-roboto-slab'
 
@@ -10,12 +10,10 @@ import './colors.css'
 
 import reportWebVitals from './reportWebVitals'
 
-import {Provider} from './store/Provider'
-
 const routesArray = [
   {
     path: '/',
-    element: <></>,
+    element: <CryptoPage />,
     // children: [
     //   {path: '/controls', element: <></>},
     //   {path: '/', element: <></>},
@@ -31,9 +29,7 @@ const App = () => {
 ReactDOM.render(
   <div className='wrapper'>
     <Router>
-      <Provider>
-        <App />
-      </Provider>
+      <App />
     </Router>
   </div>,
   document.getElementById('src'),

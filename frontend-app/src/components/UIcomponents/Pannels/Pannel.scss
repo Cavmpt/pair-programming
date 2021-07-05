@@ -1,0 +1,9 @@
+.coin-pannel {
+  display: grid;
+  place-items: center;
+
+  &__boxes-wrapper {
+    margin-top: 2rem;
+    display: flex;
+  }
+}
